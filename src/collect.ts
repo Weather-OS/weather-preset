@@ -67,7 +67,7 @@ export default async function main() {
     }
 
     await writeFile(
-        join(process.cwd(), "project.json"),
+        join(process.cwd(), "brtx-src", "project.json"),
         JSON.stringify(project, null, 4),
     );
 
