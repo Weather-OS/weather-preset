@@ -4,15 +4,25 @@
 
 Each pack needs its own UUID. Easily [generate one online](https://www.uuidgenerator.net/) or in VS Code by pressing `Shift+Alt+U`.
 
-## Generate a [Lazurite](https://veka0.github.io/lazurite/) Profile
+## Generate a Preset
 
-Use __[BetterRTX Creator](https://bedrock.graphics/creator/lighting-and-shading.html)__ to generate a Lazurite profile.
+Preset settings can be generated using the [BetterRTX Creator](https://bedrock.graphics/creator) tool.
+
+After modifying the settings, go to the _Setup_ tab and click the _Save File_ button. This will create a `settings.json` file to download.
+
+The settings file can also be manually adjusted in a JSON file editor, such as VS Code. Use the following schema URL in the file to enable auto-completion:
+
+```json
+{
+    "$schema": "https://bedrock.graphics/creator/schema"
+}
+```
 
 ## Clone the Repository
 
 Clone this repo to begin adding your preset.
 
-Copy the `macros` property from the [output](#generate-a-lazurite-profile) Lazurite `profile.json` into a file called `./presets/[Your UUID]/macro.json`
+Save the preset settings in `./presets/[Your UUID]/settings.json`
 
 ### Write a README
 
@@ -24,14 +34,15 @@ Your README's Frontmatter serves as the single-source-of-truth for the preset th
 
 Example:
 
-```
+```yaml
 ---
 name: "Website Friendly Title"
-installerTitle: "The Exact Text Displayed in the Installer"
+installerTitle: "The Text Displayed in the Installer"
 version: 1.0.0
-brtxVersion: 1.2.2
-lastUpdated: 2024-09-01
+brtxVersion: 1.3
+lastUpdated: 2025-01-10
 author: Not Mojang
+hash: [Optional settings hash from Creator output]
 ---
 ```
 
