@@ -6,9 +6,11 @@ Each pack needs its own UUID. Easily [generate one online](https://www.uuidgener
 
 ## Generate a Preset
 
-Preset settings can be generated using the [BetterRTX Creator](https://bedrock.graphics/creator) tool.
+Preset settings can be generated using the [BetterRTX Creator](https://bedrock.graphics/creator) tool. Download and test the `.rtpack` output to find your desired settings.
 
 After modifying the settings, go to the _Setup_ tab and click the _Save File_ button. This will create a `settings.json` file to download.
+
+### JSON Schema
 
 The settings file can also be manually adjusted in a JSON file editor, such as VS Code. Use the following schema URL in the file to enable auto-completion:
 
@@ -43,8 +45,17 @@ brtxVersion: 1.3
 lastUpdated: 2025-01-10
 author: Not Mojang
 hash: [Optional settings hash from Creator output]
+rtxStub: [RTXStub.material.bin URL]
+rtxChecksum: [SHA-256 file chucksum]
+toneMappingStub: [RTXPostFXTonemapping.material.bin URL]
+toneMappingChecksum: [SHA-256 file chucksum]
+bloomStub: [RTXPostFX.Bloom.material.bin URL]
+bloomChecksum: [SHA-256 file chucksum]
 ---
 ```
+
+- Checksum values are required when providing external URLs. (i.e. Anything not hosted on `cdn.bedrock.graphics`)
+- URLs are not required if a settings `hash` property is provided.
 
 ## Create PR
 
@@ -52,8 +63,7 @@ Create a pull request to add the new preset.
 
 ## Wait for Approval
 
-Presets must be manually compiled by a BetterRTX organization member.
-
+Once reviewed and merged, the preset data will be pushed to bedrock.graphics.
 ## Create a Discord Post
 
 Copy the preset link from https://bedrock.graphics/presets
