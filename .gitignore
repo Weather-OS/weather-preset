@@ -139,3 +139,5 @@ share/
 output/
 bin/
 brtx-*
+.env.development.local
+.env.local
