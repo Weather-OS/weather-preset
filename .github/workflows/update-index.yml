@@ -1,0 +1,40 @@
+name: Update Data Index
+
+on:
+  push:
+    paths:
+      - 'data/**'
+  workflow_dispatch:
+
+jobs:
+  update-index:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate data index
+        run: |
+          cd data
+          # Get directories and their last modified dates, sort by date descending
+          dirs=$(for d in */; do
+            # Get last modified date of any file in directory
+            last_mod=$(git log -1 --format=%at -- "$d")
+            echo "$last_mod $d"
+          done | sort -rn | cut -d' ' -f2 | sed 's/\///g')
+          
+          # Create JSON array
+          echo -n '['> index.json
+          echo "$dirs" | sed 's/^/    "/;s/$/",/' | sed '$s/,$//' >> index.json
+          echo ']' >> index.json
+          
+      - name: Commit changes
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
+          git add data/index.json
+          git diff --staged --quiet || (git commit -m "Update data index" && git push)
