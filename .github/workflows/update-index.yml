@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'data/**'
+      - '!data/index.json'
   workflow_dispatch:
 
 jobs:
