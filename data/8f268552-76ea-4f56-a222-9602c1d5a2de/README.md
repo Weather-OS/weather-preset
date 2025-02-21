@@ -1,13 +1,13 @@
 ---
-name: "BetterRTX 1.3: Motion Blur"
-installerTitle: "BetterRTX 1.3: Motion Blur"
+name: "BetterRTX 1.3.1: Motion Blur"
+installerTitle: "BetterRTX 1.3.1: Motion Blur"
 slug: betterrtx-motion-blur
-version: 1.3
-brtxVersion: 1.3
-rtxStub: https://drive.google.com/file/d/1d_dMBGBUVUGIeber8p0l2MbH9kw0eCHI/view?usp=sharing
-toneMappingStub: https://drive.google.com/file/d/1ZURFVGJGmohKmH3nNNiWTO1nIjPqZSpl/view?usp=sharing
-bloomStub: https://drive.google.com/file/d/1yALZ6piYwYEfrEFsNcsvMXLJ5SSoKw4F/view?usp=sharing
-lastUpdated: 2024-01-11
+version: 1.3.1
+brtxVersion: 1.3.1
+rtxStub: https://drive.google.com/file/d/1NIee0_eZUIis4zoREl2Q-Bt6bCMmL-rH/view?usp=sharing
+toneMappingStub: https://drive.google.com/file/d/1wBFJ2ie_6xDb9hwBDLk3ySU5U2huY_qf/view?usp=sharing
+bloomStub: https://drive.google.com/file/d/1K06ca-dF3PUUn7wTb6z3dsmxBHUr44-N/view?usp=sharing
+lastUpdated: 2024-02-21
 author: "MADLAD & John"
 tags: [Base, Rain, Tone Mapping, Shadows, Survival, Water, Sky, Motion Blur]
 sort: 2
