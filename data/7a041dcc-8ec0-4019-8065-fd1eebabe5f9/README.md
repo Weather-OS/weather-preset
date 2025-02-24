@@ -7,7 +7,7 @@ brtxVersion: 1.3.1
 rtxStub: https://drive.google.com/file/d/1eFVwQirQdMIcCMA7itsksl7BcMifhr16/view?usp=sharing
 toneMappingStub: https://drive.google.com/file/d/1W7iiyaVmLhDVRbzlFqhlTJdbF99XT2jv/view?usp=sharing
 bloomStub: https://drive.google.com/file/d/13f49qgbeAAbSu28WWyP8QdVsbKhOtrc0/view?usp=sharing
-lastUpdated: 2024-02-21
+lastUpdated: 2025-02-21
 author: "MADLAD & John"
 tags: [Base, Rain, Tone Mapping, Shadows, Survival, Water, Sky, Depth of Field]
 sort: 2
