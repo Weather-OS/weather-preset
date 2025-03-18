@@ -1,20 +1,20 @@
 ---
 name: Infectious
-installerTitle: "BetterRTX 1.2.2: Infectious by QuirkyPlague"
-version: 1.5.1
-brtxVersion: 1.2.2
-lastUpdated: 2024-10-26
+installerTitle: "BetterRTX 1.3.1: Infectious by QuirkyPlague"
+version: 1.5.2
+brtxVersion: 1.3.1
+lastUpdated: 2025-3-17
 author: QuirkyPlague
 authorURL: https://discord.com/channels/@me/1281316135169560676/1281353931338940471
-rtxStub: https://drive.google.com/file/d/1QTqCvMCgKD9r--PY2KBQ0tIjvgwKPTKD/view?usp=drive_link
-toneMappingStub: https://drive.google.com/file/d/16rV2u7U3RBowyMuPhrEM9Bo7Ux928ir1/view?usp=drive_link
-bloomStub: https://drive.google.com/file/d/1dNtcnCxv4HLLFUb_Er8FA-BsnZlpSIqL/view?usp=sharing
+rtxStub: https://drive.google.com/file/d/1QTqCvMCgKD9r--PY2KBQ0tIjvgwKPTKD/view?usp=sharing
+toneMappingStub: https://drive.google.com/file/d/16rV2u7U3RBowyMuPhrEM9Bo7Ux928ir1/view?usp=sharing
+bloomStub: https://drive.google.com/file/d/1JZIVZFM5JyjKbhUekuVN3poNNoKbWZxF/view?usp=sharing
 tags: [Water, Tone Mapping, Shadows]
 ---
 # Infectious
 **by QuirkyPlague**
 
-Greatly enhances the atmospherics of the world in a realistic, yet playable way
+Preset focused on extreme realism and cinematic experiences. Gameplay was considered with creation
 
 Offers:
 
@@ -28,4 +28,3 @@ Offers:
 - Improved shadows
 - Custom water
 - Altered weather effects
-- Improved water caustic reflections
